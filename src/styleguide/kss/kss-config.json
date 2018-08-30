@@ -1,0 +1,23 @@
+{
+  "title": "Style Guide",
+
+  "source": [
+    "../../scss/",
+    "../"
+  ],
+
+  "destination": "../../../styleguide/",
+
+  "builder": "",
+
+  "css": [
+    "../dist/css/bootstrap.min.css",
+    "../dist/css/main.min.css"
+  ],
+
+  "js" : [
+    "../dist/js/jquery.min.js",
+    "../dist/js/bootstrap.min.js",
+    "../dist/js/main.min.js"
+  ]
+}

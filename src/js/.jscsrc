@@ -1,0 +1,47 @@
+{
+    "disallowEmptyBlocks": true,
+    "disallowMixedSpacesAndTabs": true,
+    "disallowMultipleLineStrings": true,
+    "disallowTabs": true,
+    "disallowTrailingWhitespace": true,
+    "disallowUnusedParams": false,
+    "requireCamelCaseOrUpperCaseIdentifiers": true,
+    "requireCurlyBraces": {
+        keywords: [],
+        allExcept: [
+            "switch"
+        ]
+    },
+    "requireLineBreakAfterVariableAssignment": true,
+    "requireMultipleVarDecl": "onevar",
+    "requireObjectKeysOnNewLine": true,
+    "requirePaddingNewLineAfterVariableDeclaration": true,
+    "requirePaddingNewLinesAfterBlocks": {
+        "allExcept": ["inProperties", "inCallExpressions"]
+    },
+    "requirePaddingNewLinesAfterUseStrict": true,
+    "requirePaddingNewLinesInObjects": true,
+    "requireSemicolons": true,
+    "requireSpaceAfterBinaryOperators": true,
+    "requireSpaceAfterComma": true,
+    "requireSpaceBeforeBinaryOperators": true,
+    "requireSpaceBeforeKeywords": {
+        allExcept: "typeof, function"
+    },
+    "requireSpaceBeforeObjectValues": true,
+    "requireSpaceBetweenArguments": true,
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInConditionalExpression": {
+        "afterTest": true,
+        "beforeConsequent": true,
+        "afterConsequent": true,
+        "beforeAlternate": true
+    },
+    "requireSpacesInForStatement": true,
+    "requireSpacesInFunctionDeclaration": {
+        "beforeOpeningCurlyBrace": true
+    }
+}

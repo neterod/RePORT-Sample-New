@@ -1,0 +1,25 @@
+.footer {
+    margin-top: 30px;
+    padding: 30px 0;
+    font-size: 13px;
+    color: $footer-color;
+    background-color: $footer-bg;
+    text-align: center;
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            a {
+                padding: 0px 15px;
+                color: $footer-link-color;
+            }
+            + li a {
+                border-left: 1px solid #b2b2b2;
+            }
+        }
+    }
+    .footer-tagline {
+        margin: 20px 0 0;
+    }
+  }

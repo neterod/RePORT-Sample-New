@@ -1,0 +1,81 @@
+table {
+    tbody {
+        th {
+            color: $table-header-color;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    // use pixels if body and header font are not the same size
+    $horizontal-padding: 0.75em;
+
+    table {
+        thead {
+            th {
+                background-color: $table-header-color;
+                color: #fff;
+                padding: 0.5em $horizontal-padding;
+            }
+        }
+        tbody {
+            th {
+                color: $table-header-color;
+                padding: 0.25em $horizontal-padding;
+            }
+        }
+        td {
+            padding: 0.25em $horizontal-padding;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    table {
+        thead {
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+        tr {
+            border-bottom: 3px solid $table-header-color;
+            display: block;
+            &:first-child {
+                border-top: 3px solid $table-header-color;
+            }
+        }
+        td {
+            border-bottom: 1px solid #ddd;
+            display: block;
+            &:before {
+                display: table-cell;
+                content: attr(data-label);
+                float: left;
+                margin-right: 0.4em;
+                // color: #777;
+                color: $table-header-color;
+            }
+        }
+    }
+}
+
+.table-stripe-vertical {
+    td {
+        &:nth-child(2n) {
+            background-color: $table-stripe-color;
+        }
+    }
+}
+
+.table-stripe-horizontal {
+    tr {
+        &:nth-child(2n) {
+            background-color: $table-stripe-color;
+        }
+    }
+}

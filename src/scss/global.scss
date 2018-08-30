@@ -1,0 +1,56 @@
+.jumbotron {
+    background-size: cover;
+    border-radius: 0;
+    text-shadow: $text-shadow-light;
+    &.inverse {
+        color: #fff;
+        text-shadow: $text-shadow-dark;
+    }
+    // remove text shadow on buttons in jumbotron
+    .btn {
+        text-shadow: none;
+    }
+}
+
+// hide linked SVGs before they are replaced with inline SVGs by the script
+img[src$=".svg"] {
+    display: none;
+}
+
+// example class, feel free to remove in actual projects
+.example-icon {
+    position: relative;
+    top: -0.08em;
+    display: inline-block;
+    margin-right: 0.25em;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    .color1 {
+        fill: map-get($theme-colors, primary);
+    }
+}
+
+$reader-icon-size: 22px;
+$icon-margin: $reader-icon-size * 0.4;
+
+#readers {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.reader-download {
+    margin-right: $icon-margin;
+    &:first-child {
+        margin-left: $icon-margin;
+    }
+}
+
+.icon-reader {
+    position: relative;
+    top: -0.08em;
+    display: inline-block;
+    width: $reader-icon-size;
+    height: $reader-icon-size;
+    vertical-align: middle;
+}

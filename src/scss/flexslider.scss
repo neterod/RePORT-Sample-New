@@ -1,0 +1,110 @@
+
+.flexslider {
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+.slides {
+    > li {
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+        background-color: #fff;
+        color: #000;
+        text-shadow: $text-shadow-light;
+        > .container-fluid {
+            background-size: cover;
+            height: 100%;
+            &.inverse {
+                background-color: #000;
+                color: #fff;
+                text-shadow: $text-shadow-dark;
+            }
+            > .row {
+                display: table;
+                height: 100%;
+                max-width: 50%;
+                @include media-breakpoint-down(md) {
+                    max-width: 75%;
+                }
+                @include media-breakpoint-down(sm) {
+                    max-width: 100%;
+                }
+                > div {
+                    display: table-cell;
+                    padding-left: 4em;
+                    vertical-align: middle;
+                    transform: translateZ(0);
+                }
+            }
+        }
+    }
+}
+
+.flex-viewport {
+    // position: relative;
+    // z-index: 1;
+
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+
+.slide1 {
+    background-image: url(../images/PIA18461-1920x1200.jpg);
+}
+
+.slide2 {
+    background-image: url(../images/iss048e010018_lrg_0.jpg);
+}
+
+.slide3 {
+    background-image: url(../images/PIA21762-1920x1200.jpg);
+}
+
+.flex-direction-nav {
+    $nav-arrow-size: 42px;
+    a {
+        width: $nav-arrow-size;
+        height: $nav-arrow-size;
+    }
+    .flex-nav-prev,
+    .flex-nav-next {
+        a {
+            &:before {
+                content: '';
+                font-family: sans-serif; // override unused font to prevent 404 error
+                width: $nav-arrow-size;
+                height: $nav-arrow-size;
+            }
+        }
+    }
+    .flex-nav-prev {
+        a {
+            &:before {
+                background-image: url("/images/icon-slider-arrow-left.svg");
+            }
+        }
+    }
+    .flex-nav-next {
+        a {
+            &:before {
+                background-image: url("/images/icon-slider-arrow-right.svg");
+            }
+        }
+    }
+}
+
+.flex-control-nav {
+    bottom: 10px;
+}
+
+.flex-control-paging {
+    li {
+        a {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+        }
+    }
+}
