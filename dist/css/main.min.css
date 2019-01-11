@@ -182,7 +182,7 @@
       left: 0;
       height: 0;
       min-width: 200px;
-      background-color: #ffffff;
+      background-color: transparent;
       z-index: 1;
       overflow: hidden;
       transition: .3s;
